@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Anish Lab02</string>
+    <string name="enter_name">Change Name</string>
+    <string-array name="classes_array">
+        <item>Linear</item>
+        <item>AI</item>
+        <item>Mobile</item>
+        <item>Physics</item>
+        <item>Psych</item>
+        <item>English</item>
+        <item>APUSH</item>
+    </string-array>
+</resources>
