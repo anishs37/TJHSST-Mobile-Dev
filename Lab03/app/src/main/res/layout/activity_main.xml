@@ -4,12 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/activity_main">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/topLeft_textView"
+        android:layout_width="@dimen/length"
+        android:layout_height="@dimen/length"
+        android:text="Top Left"
+        android:tag="topLeft"
+        android:textSize="@dimen/textsize"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/topRight_textView"
+        android:layout_width="@dimen/length"
+        android:layout_height="@dimen/length"
+        android:text="Top Right"
+        android:tag="topRight"
+        android:textSize="@dimen/textsize"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botLeft_Button"
+        android:layout_width="@dimen/length"
+        android:layout_height="@dimen/length"
+        android:text="Bottom Left"
+        android:tag="BotLeft"
+        android:textSize="@dimen/textsize"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botRight_Button"
+        android:layout_width="@dimen/length"
+        android:layout_height="@dimen/length"
+        android:text="Bottom Right"
+        android:tag="botRight"
+        android:textSize="@dimen/textsize"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:min="5"
+        android:max="50"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
