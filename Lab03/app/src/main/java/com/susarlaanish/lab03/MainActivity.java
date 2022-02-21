@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
     ConstraintLayout layout;
+    int lcc = 0;
+    int lcc1 = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +79,52 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public boolean onLongClick(View v) {
                 editor.clear().apply();
                 setInitVals();
+
+                if(lcc == 0) {
+                    layout.setBackgroundResource(R.color.teal_700);
+                    btBL.setBackgroundResource(R.color.teal_700);
+                    btBR.setBackgroundResource(R.color.teal_700);
+                    tvTL.setBackgroundResource(R.color.teal_700);
+                    tvTR.setBackgroundResource(R.color.teal_700);
+                    lcc = 1;
+                }
+
+                else if(lcc == 1){
+                    layout.setBackgroundResource(R.color.purple_200);
+                    btBL.setBackgroundResource(R.color.purple_200);
+                    btBR.setBackgroundResource(R.color.purple_200);
+                    tvTL.setBackgroundResource(R.color.purple_200);
+                    tvTR.setBackgroundResource(R.color.purple_200);
+                    lcc = 2;
+                }
+
+                else if(lcc == 2){
+                    layout.setBackgroundResource(R.color.purple_500);
+                    btBL.setBackgroundResource(R.color.purple_500);
+                    btBR.setBackgroundResource(R.color.purple_500);
+                    tvTL.setBackgroundResource(R.color.purple_500);
+                    tvTR.setBackgroundResource(R.color.purple_500);
+                    lcc = 3;
+                }
+
+                else if(lcc == 3){
+                    layout.setBackgroundResource(R.color.purple_700);
+                    btBL.setBackgroundResource(R.color.purple_700);
+                    btBR.setBackgroundResource(R.color.purple_700);
+                    tvTL.setBackgroundResource(R.color.purple_700);
+                    tvTR.setBackgroundResource(R.color.purple_700);
+                    lcc = 4;
+                }
+
+                else if(lcc == 4){
+                    layout.setBackgroundResource(R.color.white);
+                    btBL.setBackgroundResource(R.color.white);
+                    btBR.setBackgroundResource(R.color.white);
+                    tvTL.setBackgroundResource(R.color.white);
+                    tvTR.setBackgroundResource(R.color.white);
+                    lcc = 0;
+                }
+
                 return false;
             }
         });
@@ -98,6 +146,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         v1.setText("" + (Integer.parseInt(strText) + 1));
         editor.putString(v1.getTag().toString(), v1.getText().toString());
         editor.apply();
+
+        if(lcc1 == 0) {
+            v1.setBackgroundResource(R.color.teal_700);
+            lcc1 = 1;
+        }
+
+        else if(lcc1 == 1){
+            v1.setBackgroundResource(R.color.purple_200);
+            lcc1 = 2;
+        }
+
+        else if(lcc1 == 2){
+            v1.setBackgroundResource(R.color.purple_500);
+            lcc1 = 3;
+        }
+
+        else if(lcc1 == 3){
+            v1.setBackgroundResource(R.color.purple_700);
+            lcc1 = 4;
+        }
+
+        else if(lcc1 == 4){
+            v1.setBackgroundResource(R.color.white);
+            lcc1 = 0;
+        }
     }
 
     @Override
