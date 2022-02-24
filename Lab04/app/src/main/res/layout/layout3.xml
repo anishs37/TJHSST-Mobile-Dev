@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vert_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".25"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vert_guide_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1"/>
+
+    <TextView
+        android:id="@+id/tvCVG"
+        android:layout_width="225dp"
+        android:layout_height="20dp"
+        android:textSize="10sp"
+        android:text="Upper TextView"
+        android:gravity="center"
+        android:background="@color/teal_200"
+        app:layout_constraintLeft_toLeftOf="@id/vert_guide"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btCVG"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:textSize="10sp"
+        android:text="Upper Button"
+        android:gravity="center"
+        android:background="@color/teal_200"
+        app:layout_constraintLeft_toLeftOf="@id/vert_guide"
+        app:layout_constraintRight_toRightOf="@id/vert_guide_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.2"/>
+
+    <TextView
+        android:id="@+id/tvCent"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:textSize="10sp"
+        android:text="TV Cent"
+        android:gravity="center"
+        android:background="@color/teal_200"
+        app:layout_constraintLeft_toLeftOf="@id/vert_guide"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBot"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:textSize="10sp"
+        android:text="TV Bot"
+        android:gravity="center"
+        android:background="@color/teal_200"
+        app:layout_constraintLeft_toLeftOf="@id/vert_guide"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

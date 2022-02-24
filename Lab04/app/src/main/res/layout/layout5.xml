@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_top"
+        android:gravity="center"
+        android:text="Scroll Down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/bt_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hehheheheheh…..heeeheehe..hehe… sigh. I remember that i was just about to eat one of my fries when I noticed something mushy and moist and [insert gross color like green or brown] on the end of one of my fries! now I can give it to this NERD!! ” (yes he is a nerd because all he does all day is watch the extended editions of the hobbit, lord of the rings and star wars and eat fat cakes (what the heck is a fat cake? I think it might be like a Twinkie or something)and twinkies(wow so is doesn’t really matter which is which because he eats both(i may have just done that so I didn’t have to Google what a fat cake is (right now I am typing on my iPhone 3gs anyway, which has a broken antenna so i can’t get internet anyway (it’s actually a really funny story that i’ll tell you sometime)))and sit in his man cave with his friend named Joe (an ACTUAL friend, not a fri end)and all Joe does is watch sports like football with bob and all bob does is gamble ferociously (don’t ask(it means he buys all those bags of chips that say “win a free monkey or something if you find a banana in your bag*”(if there is a little star it means there is fine print so I always check the back of the package) *flips over the package* okay, it says: “one of our workers accidentally threw a banana in the packing machine and we don’t want to get sued so we did this promotion thing” cool. Oh wow, this is salt and vinegar! my favourite! i hate cheese and onion.))and that’s pretty much his life, he lives in Jamaica with Naruto and his friends) so you give him that gross fri end he throws up all over you and me and the worker behind the counter who was still making an onion, and THAT is the story of the fri end, not a friend who somehow remembered your name and your phone number / email so he could text you saying he would come to your house soon. *finally takes a breath after typing a few hundred words about fri-ends* so what now? i know, i know, you think i ramble too much and use too many brackets (i don’t) but now i am going to talk about my amAZEing day. first i woke up, ate choco pops for breakfast even tho i always hate it when people say that cause i get jealous and super hungry. then i… umm… yea! that was my day. you know that other person i mentioned before? that flaming chicken person? WELL. i will steal something from that person but do it better. i will… drum roll please … badabadabadabadabadabadabummmmmmmmmmmchshchshchshchshbadabadboumboumpoopoopichypichypichypowpow-crash! *a drum roll was just playing in the background* that drumroll was so long i forget what i was talking about. *scrolls up to see what he was writing about* oh yea! i will make my own FLAMING CHICKEN HANDBOOK! what things do i like? instead of flaming it could be rainbow, instead of chicken it could be fluffysheep and instead of handbook it could be handbook (not very creative, i know) but the total complete name is now to rainbow fluffysheep handbook! to make life easier for you guys, instead of taking random rules out of book willy nilly, i will take them out using my favourite numbers! so, section 5040 of the rainbow fluffysheep handbook states that the king of all oddly coloured farm animals (thats me!) is allowed to tell you any part out of this book randomly or if it is his one of his favorite numbers! 5040 is a great number because it is divisible by 60 integers which i don’t know. i’m tired. it is 10:41 and i am getting sleepy… hey hey hey! an intruder! remember that from pokepals rulers of time and darkness or something like that! with piplup and sunflora and chimchar! whaoh piplup is really hard to write on a tiny qwerty keyboard! try it! i realised that asdf is actually written in order on the qwerty keyboard!"
+            />
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

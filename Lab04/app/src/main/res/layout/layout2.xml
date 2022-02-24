@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTL"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:textSize="30sp"
+        android:text="Top Center"
+        android:gravity="center"
+        android:background="@color/teal_200"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vert_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horiz_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".4"/>
+
+    <TextView
+        android:id="@+id/tvML"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:textSize="30sp"
+        android:text="Mid Left"
+        android:gravity="center"
+        android:background="@color/purple_200"
+        app:layout_constraintRight_toRightOf="@id/vert_guide"
+        app:layout_constraintBottom_toBottomOf="@+id/horiz_guide" />
+
+    <TextView
+        android:id="@+id/tvMR"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:textSize="30sp"
+        android:text="Mid Right"
+        android:gravity="center"
+        android:background="@color/purple_200"
+        app:layout_constraintLeft_toLeftOf="@id/vert_guide"
+        app:layout_constraintTop_toTopOf="@+id/horiz_guide" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
