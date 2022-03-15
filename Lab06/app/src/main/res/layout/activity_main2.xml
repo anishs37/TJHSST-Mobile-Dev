@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8B32A8"
+    android:background="#324AA8"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.Guideline
@@ -24,7 +24,7 @@
         app:layout_constraintRight_toRightOf="parent"/>
 
     <androidx.viewpager2.widget.ViewPager2
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:id="@+id/container"
         app:layout_constraintHeight_percent=".70"
