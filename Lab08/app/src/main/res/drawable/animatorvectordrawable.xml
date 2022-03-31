@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt" >
+    <aapt:attr name="android:drawable">
+        <vector
+            android:height="30dp"
+            android:width="30dp"
+            android:viewportHeight="30"
+            android:viewportWidth="30" >
+            <group
+                android:name="rotationGroup"
+                android:pivotX="9.0"
+                android:pivotY="9.0"
+                android:rotation="45.0" >
+                <path
+                    android:name="sticks"
+                    android:fillColor="#FF3700B3"
+                    android:pathData="M9,16.17 L4.83,12 l-1.42,1.41 L9,19 21,7 l-1.41,-0.41z"/>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="rotationGroup"> *
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="6000"
+                android:propertyName="rotation"
+                android:valueFrom="0"
+                android:valueTo="360" />
+        </aapt:attr>
+    </target>
+    <target android:name="sticks" >
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:duration="6000"
+                    android:propertyName="pathData"
+                    android:valueFrom="M12,16.17 L4.83,12 l-1.42,1.41 L13,24 21,12 l-1.41,-5.41z"
+                    android:valueTo="M9,16.17 L4.83,12 l-1.42,1.41 L9,19 21,7 l-1.41,-1.41z"
+                    android:valueType="pathType"/>
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>

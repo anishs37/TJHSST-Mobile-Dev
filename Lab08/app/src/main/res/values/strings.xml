@@ -1,0 +1,6 @@
+
+<resources>
+    <string name="app_name">Anish Lab08</string>
+    <string name="start_path">M300,70 l 0,-70 70,70 0,0 -70,70z</string>
+    <string name="end_path">M300,70 l 0,-70 70,0  0,140 -70,0 z</string>
+</resources>
