@@ -15,11 +15,12 @@ public class FragmentB extends Fragment {
     View view;
 
     // Creates a new fragment given an int and title
-    public static FragmentB newInstance(int someInt, String someTitle) {
+    public static FragmentB newInstance(int someInt, int color, String someTitle) {
         FragmentB fragmentB = new FragmentB();
         Bundle args = new Bundle();//package variables into Bundle
         args.putInt("someInt", someInt);
         args.putString("someTitle", someTitle);
+        args.putInt("someColor", color);
         fragmentB.setArguments(args);//assign bundle to arguments
         return fragmentB;
     }
@@ -39,6 +40,7 @@ public class FragmentB extends Fragment {
         // Get back arguments
         int someInt = getArguments().getInt("someInt", 0);
         String someTitle = getArguments().getString("someTitle", "");
+        int color = getArguments().getInt("someColor", R.color.blue);
 
         //setup here
         TextView textView = view.findViewById(R.id.b_textview);
@@ -46,6 +48,7 @@ public class FragmentB extends Fragment {
         Button button = view.findViewById(R.id.b_button);
         String count = getString(R.string.count, someInt);
         button.setText(count);
+        button.setBackgroundColor(color);
     }
 
     // Parent Activity has finished loading, access parent views here

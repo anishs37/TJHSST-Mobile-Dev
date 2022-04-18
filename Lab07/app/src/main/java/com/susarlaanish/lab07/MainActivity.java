@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    int x = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
 
         // Replace the contents of the container with the new fragment
-        ft.add(R.id.fragment_container, FragmentB.newInstance(4,"Hello SuperStar"),"FragmentName");
+        ft.add(R.id.fragment_container, FragmentB.newInstance(4,0, "Hello SuperStar"),"FragmentName");
         //or ft.replace(R.id.fragment_container, new FragmentB());
 
         // Complete the changes added above
@@ -33,8 +35,27 @@ public class MainActivity extends AppCompatActivity {
         // Begin the transaction
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.setCustomAnimations(R.animator.slide_up,R.animator.slide_down);
+
+        String cName = "";
+        int color = -1;
+
+        if(x % 6 == 0){
+            cName = "blue";
+            color = getResources().getColor(R.color.blue);
+        }
+
+        else if(x % 6 == 1){
+            cName = "green";
+            color = getResources().getColor(R.color.green);
+        }
+
+        else{
+            cName = "violet";
+            color = getResources().getColor(R.color.violet);
+        }
+
         // Replace the contents of the container with the new fragment
-        ft.replace(R.id.fragment_container, FragmentB.newInstance(3,"Hello RockStar"),"BetterFragment");
+        ft.replace(R.id.fragment_container, FragmentB.newInstance(x++, color, "Hello RockStar"),"BetterFragment");
         // Complete the changes added above
         ft.commit();
     }
