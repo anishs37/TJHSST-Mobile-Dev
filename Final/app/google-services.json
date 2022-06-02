@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "395401315869",
+    "firebase_url": "https://mood-detector-93f71-default-rtdb.firebaseio.com",
+    "project_id": "mood-detector-93f71",
+    "storage_bucket": "mood-detector-93f71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395401315869:android:6919144a6d5481b1aea8f4",
+        "android_client_info": {
+          "package_name": "com.susarlaanish.afinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395401315869-tdjmr19bk1qurla21ldjr9im3ligv1oi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhn6rfVhz8M9cB0unjmwGlPZ_2gVnJaR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395401315869-tdjmr19bk1qurla21ldjr9im3ligv1oi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
