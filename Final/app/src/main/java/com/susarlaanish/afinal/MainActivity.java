@@ -9,11 +9,6 @@ import com.google.android.gms.tasks.*;
 import com.google.firebase.auth.*;
 import com.google.firebase.database.*;
 
-/Users/anish/Documents/TJHSST-AI-2/Unit 9/Back Propagation/mnist_test.py
-        /Users/anish/Documents/TJHSST-AI-2/Unit 8/KMeans/image_vec_dither.py
-        /Users/anish/Documents/TJHSST-AI-2/Unit 9/Gradient Descent/line_optimization.py
-        /Users/anish/Documents/TJHSST-AI-2/Unit 8/KMeans/image_vec.py
-        /Users/anish/Documents/TJHSST-AI-2/Unit 8/KMeans/copilot_test.py
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
 
